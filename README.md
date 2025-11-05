@@ -1,30 +1,45 @@
 # Git Helper
 
-`git-helper` is a Python script that provides a simple command-line interface to perform common Git operations. It simplifies tasks like cloning repositories, checking status, creating commits, creating tags, and pushing changes.
+O `git-helper` é um script Python que fornece uma interface de linha de comando simples para realizar operações Git comuns. Ele simplifica tarefas como clonar repositórios, verificar o status, criar commits, criar tags e enviar alterações.
 
-## Features
+## Funcionalidades
 
--   **Clone Repositories**: Clone a new repository from a URL.
--   **Work with Local Repositories**: Easily manage your local git repositories.
--   **Git Status**: Show the working tree status.
--   **Remote Access Check**: Verify connection to the remote repository.
--   **Create Commits**: Add and commit all changes in the working directory.
--   **Create Tags**: Create annotated tags.
--   **Push Changes**: Push commits and/or tags to the remote repository.
+-   **Clonar Repositórios**: Clone um novo repositório a partir de uma URL.
+-   **Trabalhar com Repositórios Locais**: Gerencie facilmente seus repositórios git locais.
+-   **Status do Git**: Mostra o status da árvore de trabalho.
+-   **Verificar Acesso Remoto**: Verifica a conexão com o repositório remoto.
+-   **Criar Commits**: Adiciona e faz o commit de todas as alterações no diretório de trabalho.
+-   **Criar Tags**: Crie tags anotadas.
+-   **Enviar Alterações (Push)**: Envie commits e/ou tags para o repositório remoto.
 
-## Usage
+## Como Usar
 
-1.  Run the script:
+### Linux/macOS
+
+1.  Execute o script:
     ```bash
     python3 git-helper.py
     ```
 
-2.  The script will present a menu with options to clone a repository or work with an existing local repository.
+2.  O script apresentará um menu com opções para clonar um repositório ou trabalhar com um repositório local existente.
 
-3.  If you choose to work with a local repository, the script will list all git repositories found in the base directory (`~/Documentos/Git` by default).
+3.  Se você optar por trabalhar com um repositório local, o script listará todos os repositórios git encontrados no diretório base (`~/Documentos/Git` por padrão).
 
-4.  After selecting a repository, you can choose from a list of actions to perform.
+4.  Após selecionar um repositório, você pode escolher em uma lista de ações a serem executadas.
 
-## Cross-Platform Compatibility
+### Windows
 
-The script is written in Python and uses the `pathlib` module, which handles path operations in a cross-platform manner. This allows the script to run on both Windows and Linux systems without modification.
+Para usar o `git-helper` no Windows, você precisará ter o [Python](https://www.python.org/downloads/) e o [Git](https://git-scm.com/download/win) instalados e configurados no PATH do sistema.
+
+1.  Abra o `cmd` ou o `PowerShell` e navegue até o diretório onde o script `git-helper.py` está localizado.
+
+2.  Execute o script usando o comando `python`:
+    ```bash
+    python git-helper.py
+    ```
+
+3.  O script funcionará da mesma forma que no Linux, apresentando um menu para você interagir.
+
+## Compatibilidade entre Plataformas
+
+O script é escrito em Python e usa o módulo `pathlib`, que lida com operações de caminho de forma multiplataforma. Isso permite que o script seja executado em sistemas Windows e Linux sem modificação.
