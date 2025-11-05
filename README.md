@@ -1,45 +1,19 @@
-# Git Helper
+# git-helper
 
-O `git-helper` é um script Python que fornece uma interface de linha de comando simples para realizar operações Git comuns. Ele simplifica tarefas como clonar repositórios, verificar o status, criar commits, criar tags e enviar alterações.
+Um script Python para simplificar operações comuns do Git.
 
-## Funcionalidades
-
--   **Clonar Repositórios**: Clone um novo repositório a partir de uma URL.
--   **Trabalhar com Repositórios Locais**: Gerencie facilmente seus repositórios git locais.
--   **Status do Git**: Mostra o status da árvore de trabalho.
--   **Verificar Acesso Remoto**: Verifica a conexão com o repositório remoto.
--   **Criar Commits**: Adiciona e faz o commit de todas as alterações no diretório de trabalho.
--   **Criar Tags**: Crie tags anotadas.
--   **Enviar Alterações (Push)**: Envie commits e/ou tags para o repositório remoto.
-
-## Como Usar
+## Como usar
 
 ### Linux/macOS
 
-1.  Execute o script:
-    ```bash
-    python3 git-helper.py
-    ```
-
-2.  O script apresentará um menu com opções para clonar um repositório ou trabalhar com um repositório local existente.
-
-3.  Se você optar por trabalhar com um repositório local, o script listará todos os repositórios git encontrados no diretório base (`~/Documentos/Git` por padrão).
-
-4.  Após selecionar um repositório, você pode escolher em uma lista de ações a serem executadas.
+1.  Abra o terminal.
+2.  Navegue até o diretório do projeto: `cd /path/to/git-helper`
+3.  Execute o script: `python3 git-helper.py`
 
 ### Windows
 
-Para usar o `git-helper` no Windows, você precisará ter o [Python](https://www.python.org/downloads/) e o [Git](https://git-scm.com/download/win) instalados e configurados no PATH do sistema.
-
-1.  Abra o `cmd` ou o `PowerShell` e navegue até o diretório onde o script `git-helper.py` está localizado.
-
-2.  Execute o script usando o comando `python`:
-    ```bash
-    python git-helper.py
-    ```
-
-3.  O script funcionará da mesma forma que no Linux, apresentando um menu para você interagir.
-
-## Compatibilidade entre Plataformas
-
-O script é escrito em Python e usa o módulo `pathlib`, que lida com operações de caminho de forma multiplataforma. Isso permite que o script seja executado em sistemas Windows e Linux sem modificação.
+1.  **Instale o Python:** Se ainda não tiver, baixe e instale o Python em [python.org](https://python.org). Marque a opção "Add Python to PATH" durante a instalação.
+2.  **Instale o Git:** Se ainda não tiver, baixe e instale o Git em [git-scm.com](https://git-scm.com/).
+3.  **Abra o Command Prompt (cmd) ou PowerShell:**
+4.  Navegue até o diretório do projeto. Por exemplo: `cd C:\Users\SeuUsuario\Documents\git-helper`
+5.  Execute o script: `python git-helper.py`
